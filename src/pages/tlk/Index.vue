@@ -1,15 +1,22 @@
 <template>
   <div class="wrapper">
     <div class="hjz">
-      <div class="title">护甲值</div>
-      <div class="margin-top number">{{ data.hjz }}</div>
+      <div class="number">
+        {{ data.hjz }}
+        <van-icon
+          class="iconfont icon-hujia icon margin-left"
+          color="#808080"
+        />
+      </div>
     </div>
-    <div class="hjz title margin-top">
-      <div class="title">体力值</div>
-      <div class="margin-top number">
-        <span>{{ data.tlz }}</span>
-        /
+    <div class="hjz margin-top">
+      <div class="number">
+        <span>{{ data.tlz }}/</span>
         <span>{{ data.tlsx }}</span>
+        <van-icon
+          class="iconfont icon-shoushuchuxieliang icon margin-left"
+          color="#FF0000"
+        />
       </div>
     </div>
     <cus-stepper class="margin-top" v-model:value="data.hjz" title="护甲值" />
@@ -45,22 +52,36 @@
       font-size: 25px;
     }
 
-    .number {
-      font-size: 35px;
-    }
-
     .hjz {
       background-color: #fff;
       width: 100%;
       padding: 8px; /* 添加一些内边距以增加美观性 */
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
+
+      .number {
+        font-size: 110px;
+        font-weight: bold;
+        position: relative; /* 设置为相对定位 */
+
+        .icon {
+          font-size: 40px;
+          font-weight: bold;
+          position: absolute; /* 设置为绝对定位 */
+          bottom: 25px; /* 距离底部0距离 */
+          right: -50px; /* 距离右侧0距离 */
+        }
+      }
     }
   }
 
   .margin-top {
     margin-top: 20px;
+  }
+
+  .margin-left {
+    margin-left: 14px;
   }
 </style>
