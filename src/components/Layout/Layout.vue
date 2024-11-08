@@ -29,8 +29,14 @@
       <van-icon name="search" size="24" />
     </template>
   </van-nav-bar>
-
-  <router-view></router-view>
+  <div class="main">
+    <router-view></router-view>
+  </div>
+  <van-back-top />
 </template>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+  .main {
+    background-color: #f7f8fa;
+  }
+</style>
