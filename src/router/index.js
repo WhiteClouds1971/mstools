@@ -2,6 +2,8 @@ import { createWebHistory, createRouter } from 'vue-router';
 
 import constantRoutes from './routes';
 
+console.log('constantRoutes', constantRoutes);
+
 const router = createRouter({
   history: createWebHistory(),
   routes: constantRoutes,

@@ -1,5 +1,5 @@
 <template>
-  Hello World！
+  这是主页
 </template>
 
 <script setup>

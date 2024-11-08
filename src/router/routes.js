@@ -1,11 +1,13 @@
+import HomeLayout from '@/components/Layout/HomeLayout/HomeLayout.vue';
+import index from '@/pages/index.js';
+
 const constantRoutes = [
-    {
-        name: 'Home',
-        path: '/',
-        // component: AdminLayout,
-        component: () => import('@/pages/Index.vue'),
-        children: [],
-    },
+  {
+    name: 'root',
+    redirect: '/home',
+    component: HomeLayout,
+    children: [].concat(index),
+  },
 ];
 
 export default constantRoutes;
