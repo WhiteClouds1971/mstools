@@ -1,85 +1,35 @@
 <template>
-  <div class="container">
-    <!-- 显示所有元素 -->
-    <div
-        v-for="(item, index) in items"
-        :key="index"
-        class="item"
-        :class="{ 'item-selected': isSelected(index) }"
-        @click="toggleSelection(index)"
-    >
-      {{ item }}号位
-    </div>
-
-    <!-- 添加新成员按钮 -->
-    <button class="add-button" @click="addItem">添加成员</button>
+  <div>
+    <selectable-grid
+      :initial-items="data"
+      :canSelect="true"
+      :clearSelection="clearSelection"
+    />
+    <van-floating-bubble axis="xy" icon="plus" magnetic="x" @click="onClick" />
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+  import SelectableGrid from '@/components/SelectableGrid.vue';
 
-const items = ref([1, 2, 3, 4, 5, 6, 7, 8]); // 初始值
-const selectedIndices = ref(new Set()); // 存储选中的索引
-
-const toggleSelection = (index) => {
-  if (selectedIndices.value.has(index)) {
-    selectedIndices.value.delete(index); // 取消选中
-  } else {
-    selectedIndices.value.add(index); // 选中
-  }
-};
-
-const isSelected = (index) => {
-  return selectedIndices.value.has(index);
-};
-
-const addItem = () => {
-  const nextValue = items.value.length + 1;
-  items.value.push(nextValue); // 添加新元素
-};
+  const clearSelection = ref(false);
+  const data = reactive([
+    { id: 1, code: 1, name: '1号位' },
+    { id: 2, code: 2, name: '2号位' },
+    { id: 3, code: 3, name: '3号位' },
+    { id: 4, code: 4, name: '4号位' },
+    { id: 5, code: 5, name: '5号位' },
+    { id: 6, code: 6, name: '6号位' },
+    { id: 7, code: 7, name: '7号位' },
+    { id: 8, code: 8, name: '8号位' },
+  ]);
+  const onClick = () => {
+    data.push({
+      id: data.length + 1,
+      code: data.length + 1,
+      name: `${data.length + 1}号位`,
+    });
+  };
 </script>
 
-<style lang="less">
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 10px;
-}
-
-.item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: calc(25% - 10px); /* 每行4个元素，减去gap */
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  &.item-selected {
-    background-color: #e6f7ff; /* 当元素被选中时，改变背景颜色 */
-    border: 2px solid #1890ff; /* 加粗边框 */
-    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2); /* 增加阴影 */
-    transform: scale(1.05); /* 放大效果 */
-  }
-}
-
-.add-button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #1890ff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background-color: #157bd7; /* 悬停时改变背景颜色 */
-  }
-}
-</style>
+<style lang="less" scoped></style>
