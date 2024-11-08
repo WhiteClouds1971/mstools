@@ -1,4 +1,4 @@
-import HomeLayout from '@/components/Layout/HomeLayout/HomeLayout.vue';
+import HomeLayout from '@/components/Layout/Layout.vue';
 import index from '@/pages/index.js';
 
 const constantRoutes = [
@@ -6,7 +6,7 @@ const constantRoutes = [
     name: 'root',
     redirect: '/home',
     component: HomeLayout,
-    children: [].concat(index),
+    children: index,
   },
 ];
 
