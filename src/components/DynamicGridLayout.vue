@@ -23,7 +23,12 @@
   const slots = useSlots();
   const slotItems = computed(() => {
     // 返回插槽内容数组，每个元素都是 VNode
-    return slots.default()[0].children || [];
+    return (slots.default() || []).flatMap(item => {
+      if (item.children.length) {
+        return item.children;
+      }
+      return item;
+    });
   });
 
   // 动态设置样式以实现响应式布局
