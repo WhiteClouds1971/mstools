@@ -48,9 +48,7 @@
   .wrapper-1 {
     display: flex;
     width: 100%;
-    background-color: #fff;
     align-items: center; /* 垂直居中 */
     justify-content: space-around; /* 水平分布，使 title 和 stepper 分开 */
-    padding: 8px; /* 添加一些内边距以增加美观性 */
   }
 </style>

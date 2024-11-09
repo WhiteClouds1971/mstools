@@ -19,24 +19,25 @@
         />
       </div>
     </div>
-    <cus-stepper
-      class="margin-top"
-      v-model:value="data.hjz"
-      title="护甲值"
-      :min="0"
-      :max="5"
-    />
-    <cus-stepper
-      class="margin-top"
-      v-model:value="data.tlz"
-      title="体力值"
-      :min="1"
-    />
-    <cus-stepper
-      class="margin-top"
-      v-model:value="data.tlsx"
-      title="体力上限"
-    />
+    <div class="qty margin-top" >
+      <cus-stepper
+        v-model:value="data.hjz"
+        title="护甲值"
+        :min="0"
+        :max="5"
+      />
+      <cus-stepper
+        class="margin-top"
+        v-model:value="data.tlz"
+        title="体力值"
+        :min="1"
+      />
+      <cus-stepper
+        class="margin-top"
+        v-model:value="data.tlsx"
+        title="体力上限"
+      />
+    </div>
   </div>
 </template>
 
@@ -58,19 +59,16 @@
     align-items: center;
     padding: 8px;
     font-family: 'Heiti SC', serif;
-
-    .title {
-      font-size: 25px;
-    }
+    background-color: #f7f8fa;
 
     .hjz {
-      background-color: #fff;
       width: 100%;
       padding: 8px; /* 添加一些内边距以增加美观性 */
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      background-color: #fff;
 
       .number {
         font-size: 110px;
@@ -85,6 +83,12 @@
           right: -50px; /* 距离右侧0距离 */
         }
       }
+    }
+
+    .qty {
+      padding: 8px 0;
+      background-color: #fff;
+      width: 100%;
     }
   }
 

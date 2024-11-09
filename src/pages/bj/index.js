@@ -1,5 +1,3 @@
-import search from '@/pages/search/index.js';
-
 export default [
   {
     name: 'BJ',
