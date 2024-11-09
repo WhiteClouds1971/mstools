@@ -24,12 +24,26 @@ export default [
   {
     code: 'JLHS',
     cover: './MenuImage/花色.jpg',
-    name: '花色',
+    name: '记录花色',
     getModal: data => {
       return {
         component: () => import('@/modal/Hs.vue'),
         modal: {
           title: '花色',
+        },
+      };
+    },
+  },
+  // 记录牌类型
+  {
+    code: 'JLLX',
+    cover: './MenuImage/类型.jpg',
+    name: '记录类型',
+    getModal: data => {
+      return {
+        component: () => import('@/modal/Lx.vue'),
+        modal: {
+          title: '类型',
         },
       };
     },
