@@ -1,16 +1,22 @@
 <template>
-  <div>
-    <selectable-grid
-      :initial-items="data"
-      :canSelect="true"
-      :clearSelection="clearSelection"
-    />
+  <div class="main">
+    <dynamic-grid-layout>
+      <selectable-button
+        v-for="(item, index) in data"
+        :key="item.id"
+        :can-select="true"
+        :clear-selection="false"
+      >
+        {{ item.name }}
+      </selectable-button>
+    </dynamic-grid-layout>
     <van-floating-bubble axis="xy" icon="plus" magnetic="x" @click="onClick" />
   </div>
 </template>
 
 <script setup>
-  import SelectableGrid from '@/components/SelectableGrid.vue';
+  import DynamicGridLayout from '@/components/DynamicGridLayout.vue';
+  import SelectableButton from '@/components/SelectableButton.vue';
 
   const clearSelection = ref(false);
   const data = reactive([
@@ -32,4 +38,9 @@
   };
 </script>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+  .main {
+    padding: 8px;
+    box-sizing: border-box; /* 添加此行 */
+  }
+</style>
