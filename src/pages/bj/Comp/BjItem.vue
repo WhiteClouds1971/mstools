@@ -7,6 +7,7 @@
     value: Number,
     name: String,
     color: String,
+    qtyMax: Number,
   });
 
   const emit = defineEmits(['update:value']);
@@ -31,7 +32,7 @@
       :color="props.color"
       :name="props.name"
     ></bj-icon>
-    <CusStepper v-model:value="data.qty" :min="0" />
+    <CusStepper v-model:value="data.qty" :min="0" :max="props.qtyMax" />
   </div>
 </template>
 
