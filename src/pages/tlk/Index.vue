@@ -19,8 +19,19 @@
         />
       </div>
     </div>
-    <cus-stepper class="margin-top" v-model:value="data.hjz" title="护甲值" />
-    <cus-stepper class="margin-top" v-model:value="data.tlz" title="体力值" />
+    <cus-stepper
+      class="margin-top"
+      v-model:value="data.hjz"
+      title="护甲值"
+      :min="0"
+      :max="5"
+    />
+    <cus-stepper
+      class="margin-top"
+      v-model:value="data.tlz"
+      title="体力值"
+      :min="1"
+    />
     <cus-stepper
       class="margin-top"
       v-model:value="data.tlsx"

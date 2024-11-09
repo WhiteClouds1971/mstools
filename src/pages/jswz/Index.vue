@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <dynamic-grid-layout>
+    <dynamic-grid-layout :auto-layout-threshold="8" :max-columns="4">
       <selectable-button
         v-for="(item, index) in data"
         :key="item.id"

@@ -2,6 +2,7 @@
   import MenuCard from '@/pages/home/Comp/MenuCard.vue';
   import menuCardConfig from '@/config/MenuCardConfig.js';
   import { useRouter } from 'vue-router';
+  import DynamicGridLayout from '@/components/DynamicGridLayout.vue';
 
   const router = useRouter();
   const callback = config => {
@@ -15,20 +16,20 @@
 
 <template>
   <div class="wrapper">
-    <van-grid :gutter="10" :column-num="2" clickable :center="false">
-      <van-grid-item
+    <dynamic-grid-layout :fixed-columns="2">
+      <menu-card
         v-for="config in menuCardConfig"
         :key="config.code"
+        :config="config"
         @click="callback(config)"
-      >
-        <menu-card :config="config" />
-      </van-grid-item>
-    </van-grid>
+      />
+    </dynamic-grid-layout>
   </div>
 </template>
 
 <style lang="less" scoped>
   .wrapper {
-    padding: 8px 0;
+    padding: 8px;
+    box-sizing: border-box; /* 添加此行 */
   }
 </style>

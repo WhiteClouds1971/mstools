@@ -13,6 +13,12 @@
 <script setup>
   import { ref, useSlots, computed } from 'vue';
 
+  const props = defineProps({
+    fixedColumns: Number, // 固定列数
+    maxColumns: Number, // 最大列数
+    autoLayoutThreshold: Number, // 元素超过多少才自动布局
+  });
+
   // 获取插槽内容
   const slots = useSlots();
   const slotItems = computed(() => {
@@ -24,11 +30,15 @@
   const getItemStyle = index => {
     const totalItems = slotItems.value.length;
     let columns = Math.floor(Math.sqrt(totalItems));
-    if (totalItems <= 8) {
+    if (props.fixedColumns) {
+      columns = props.fixedColumns;
+    } else if (props.maxColumns && columns > props.maxColumns) {
+      columns = props.maxColumns;
+    } else if (
+      props.autoLayoutThreshold &&
+      totalItems <= props.autoLayoutThreshold
+    ) {
       columns = 1;
-    }
-    if (columns > 4) {
-      columns = 4;
     }
     const width = `calc(${100 / columns}% - ${(10 * (columns - 1)) / columns}px)`;
     return {
@@ -41,8 +51,8 @@
   .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 10px;
-    justify-content: center;
     align-items: center;
   }
 </style>

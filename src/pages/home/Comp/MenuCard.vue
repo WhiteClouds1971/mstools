@@ -1,16 +1,26 @@
 <script setup>
+  import { ref, defineProps, defineEmits } from 'vue';
+
   const props = defineProps({
     config: {
       type: Object,
-      default: {},
+      default: () => ({}),
     },
   });
 
   const cover = ref(props.config.cover);
+
+  const emit = defineEmits(['click']);
+
+  // 定义点击事件处理函数
+  const handleClick = () => {
+    // 发射一个自定义事件，名称为 'item-click'，并将配置对象作为参数传递
+    emit('click', props.config);
+  };
 </script>
 
 <template>
-  <div class="wrapper">
+  <div class="wrapper-fjaf" @click="handleClick">
     <van-image class="image" fit="cover" :src="cover" />
     <van-divider vertical :style="{ borderColor: '#1989fa', height: '100%' }" />
     <div class="title">
@@ -25,23 +35,24 @@
 </template>
 
 <style scoped lang="less">
-  .wrapper {
+  .wrapper-fjaf {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box; /* 添加此行 */
+    background-color: #ffffff;
   }
 
   .image {
-    width:50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
 
   .title {
-    display: flex;          /* 启用 Flexbox 帺局 */
-    justify-content: center; /* 水平居中 */
-    align-items: center;    /* 垂直居中 */
-    flex: 1;                /* 占据剩余空间 */
-    text-align: center;     /* 文本水平居中（对于单行文本） */
-    font-size: 20px;        /* 字体大小 */
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
   }
 </style>

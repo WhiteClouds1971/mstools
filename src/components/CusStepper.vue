@@ -4,6 +4,8 @@
   const props = defineProps({
     title: String,
     value: Number,
+    min: Number,
+    max: Number,
   });
 
   const emit = defineEmits(['update:value']);
@@ -35,7 +37,8 @@
         theme="round"
         input-width="120px"
         button-size="40px"
-        min="-1000"
+        :min="props.min"
+        :max="props.max"
       />
     </div>
   </div>
