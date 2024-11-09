@@ -48,4 +48,25 @@ export default [
       };
     },
   },
+  // 谋奕
+  {
+    code: 'MOUYI',
+    cover: './MenuImage/谋奕.jpg',
+    name: '谋奕',
+    getModal: data => {
+      return {
+        component: () => import('@/modal/My.vue'),
+        modal: {
+          title: '谋奕',
+        },
+      };
+    },
+  },
+  // 阴阳转化
+  {
+    code: 'YINYANGZHUANHUAN',
+    cover: './MenuImage/阴阳转化.png',
+    name: '阴阳转化',
+    url: '/yyzh',
+  },
 ];

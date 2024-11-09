@@ -9,6 +9,13 @@ export default [
     bgColor: color.color5,
   },
   {
+    id: '01436680-8d8d-4d03-a250-dc8ab6b84a25',
+    code: '',
+    name: '轮',
+    qty: 0,
+    bgColor: color.black,
+  },
+  {
     id: '3d2863d8-5ab4-4552-8387-883e09d6d764',
     code: '',
     name: '忍',
@@ -56,7 +63,7 @@ export default [
     id: '1f4f966d-7790-40ce-ab5c-ca2f10baabeb',
     code: '',
     name: '锦织',
-    qty: 0,
+    qty: 1,
     bgColor: color.color7,
   },
   {

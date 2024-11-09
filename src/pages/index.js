@@ -3,10 +3,12 @@ import home from '@/pages/home/index.js';
 import tlk from '@/pages/tlk/index.js';
 import jswz from '@/pages/jswz/index.js';
 import bj from '@/pages/bj/index.js';
+import yyzh from '@/pages/yyzh/index.js';
 
 export default []
   .concat(home)
   .concat(search)
   .concat(tlk)
   .concat(jswz)
-  .concat(bj);
+  .concat(bj)
+  .concat(yyzh);

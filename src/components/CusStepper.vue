@@ -37,6 +37,7 @@
         theme="round"
         input-width="120px"
         button-size="40px"
+        disable-input
         :min="props.min"
         :max="props.max"
       />
