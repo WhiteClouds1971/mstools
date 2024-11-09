@@ -20,4 +20,18 @@ export default [
     name: '记录角色',
     url: '/jswz',
   },
+  // 记录花色
+  {
+    code: 'JLHS',
+    cover: './MenuImage/花色.jpg',
+    name: '花色',
+    getModal: data => {
+      return {
+        component: () => import('@/modal/Hs.vue'),
+        modal: {
+          title: '花色',
+        },
+      };
+    },
+  },
 ];

@@ -1,4 +1,4 @@
-import color from '@/config/color.js';
+import color from '@/config/Color.js';
 
 export default [
   {

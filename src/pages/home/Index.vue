@@ -3,6 +3,7 @@
   import menuCardConfig from '@/config/MenuCardConfig.js';
   import { useRouter } from 'vue-router';
   import DynamicGridLayout from '@/components/DynamicGridLayout.vue';
+  import { useModal } from '@/components/Modal/index.js';
 
   const router = useRouter();
   const callback = config => {
@@ -10,7 +11,12 @@
       router.push(config.url);
       return;
     }
-    config.callback(config);
+    const modal = config.getModal(config);
+    if (modal) {
+      useModal().open(modal);
+      return;
+    }
+    return 0;
   };
 </script>
 
