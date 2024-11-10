@@ -72,7 +72,7 @@
         <van-icon v-if="data.eye" name="eye-o" @click="data.eye = false" />
         <van-icon v-else @click="data.eye = true" name="closed-eye" />
       </div>
-      <dynamic-grid-layout style="margin-top: 8px" fixed-columns="3">
+      <dynamic-grid-layout style="margin-top: 8px" :fixed-columns="3">
         <del-card
           v-for="(item, index) in data.addedCards"
           :key="item.id"
