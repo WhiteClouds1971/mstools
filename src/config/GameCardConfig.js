@@ -182,7 +182,89 @@ const cardName = {
     },
   ],
 };
-const cardHs = [{}];
-const cardNumber = [{}];
+const cardHs = [
+  {
+    id: 'HT',
+    code: 'HT',
+    title: '黑桃',
+    icon: '♠️',
+    color: '#000000',
+  },
+  {
+    id: 'HT2',
+    code: 'HT2',
+    title: '红桃',
+    icon: '♥️',
+    color: '#FF0000',
+  },
+  {
+    id: 'MH',
+    code: 'MH',
+    title: '梅花',
+    icon: '♣️',
+    color: '#000000',
+  },
+  {
+    id: 'FP',
+    code: 'FP',
+    title: '方片',
+    icon: '♦️',
+    color: '#FF0000',
+  },
+];
+const cardNumber = [
+  {
+    id: '2',
+    name: '2',
+  },
+  {
+    id: '3',
+    name: '3',
+  },
+  {
+    id: '4',
+    name: '4',
+  },
+  {
+    id: '5',
+    name: '5',
+  },
+  {
+    id: '6',
+    name: '6',
+  },
+  {
+    id: '7',
+    name: '7',
+  },
+  {
+    id: '8',
+    name: '8',
+  },
+  {
+    id: '9',
+    name: '9',
+  },
+  {
+    id: '10',
+    name: '10',
+  },
+  {
+    id: 'J',
+    name: 'J',
+  },
+  {
+    id: 'Q',
+    name: 'Q',
+  },
+  {
+    id: 'K',
+    name: 'K',
+  },
+  {
+    id: 'A',
+    name: 'A',
+  },
+];
 
 export { cardName, cardHs, cardNumber };

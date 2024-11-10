@@ -9,6 +9,12 @@
   });
 
   const all = reactive(cardName.JinNang);
+
+  const emit = defineEmits(['select']);
+
+  const handleClick = item => {
+    emit('select', item);
+  };
 </script>
 
 <template>
@@ -18,6 +24,7 @@
         v-for="item in all"
         :key="item.id"
         :can-select="props.model === model.simpleMode"
+        @click="handleClick(item)"
       >
         <div class="name">
           {{ item.name }}

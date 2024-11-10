@@ -1,35 +1,18 @@
 <script setup>
   import DynamicGridLayout from '@/components/DynamicGridLayout.vue';
   import SelectableButton from '@/components/SelectableButton.vue';
+  import { cardHs } from '@/config/GameCardConfig.js';
+
+  const props = defineProps({
+    fixedColumns: {
+      type: Number,
+      default: 1,
+    },
+  });
 
   const data = reactive({
     clear: false,
-    hs: [
-      {
-        code: 'HT',
-        title: '黑桃',
-        icon: '♠️',
-        color: '#000000',
-      },
-      {
-        code: 'HT2',
-        title: '红桃',
-        icon: '♥️',
-        color: '#FF0000',
-      },
-      {
-        code: 'MH',
-        title: '梅花',
-        icon: '♣️',
-        color: '#000000',
-      },
-      {
-        code: 'FP',
-        title: '方片',
-        icon: '♦️',
-        color: '#FF0000',
-      },
-    ],
+    hs: cardHs,
   });
 
   const el = ref(null);
@@ -41,7 +24,7 @@
 
 <template>
   <div ref="el" class="wrapper">
-    <dynamic-grid-layout :fixed-columns="1">
+    <dynamic-grid-layout :fixed-columns="props.fixedColumns">
       <selectable-button
         :key="item.code"
         v-for="item in data.hs"
