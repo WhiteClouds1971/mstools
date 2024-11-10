@@ -171,4 +171,11 @@ export default [
     name: '谋诸葛亮',
     url:'/heroes/mzgl'
   },
+  {
+    id: 'c122c179-eb82-414d-bf53-3fac5295669e',
+    code: '',
+    cover: '/MenuImage/骆统.png',
+    name: '骆统',
+    url:'/heroes/loutongdaf'
+  },
 ];

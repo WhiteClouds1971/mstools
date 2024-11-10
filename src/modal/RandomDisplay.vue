@@ -10,6 +10,7 @@
 <script setup>
   import { ref, watch } from 'vue';
   import seedrandom from 'seedrandom';
+  import random from '@/util/random.js';
 
   // 定义props
   const props = defineProps({
@@ -34,27 +35,8 @@
 
   // 根据model值选择不同的随机算法
   const getRandomItems = () => {
-    // 使用当前时间戳作为随机数生成器的种子
-    const rng = seedrandom(Date.now().toString());
-
     const { items, count, model } = props;
-    let tempItems = [...items];
-    const result = [];
-
-    for (let i = 0; i < count; i++) {
-      if (model === 'unique' && tempItems.length > 0) {
-        // 如果不允许重复，则从剩余项中选择
-        const randomIndex = Math.floor(rng() * tempItems.length);
-        result.push(tempItems[randomIndex]);
-        tempItems.splice(randomIndex, 1); // 删除已选中的项以避免重复
-      } else {
-        // 允许重复，直接从原数组中随机选择
-        const randomIndex = Math.floor(rng() * items.length);
-        result.push(items[randomIndex]);
-      }
-    }
-
-    return result;
+    return random(items, count, model);
   };
 
   // 监听props的变化，当props变化时重新选择随机项

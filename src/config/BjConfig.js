@@ -16,6 +16,13 @@ export default [
     bgColor: color.black,
   },
   {
+    id: '1c6b89f5-72f5-40f9-857e-ee1f92ebf306',
+    code: '',
+    name: '蓄力',
+    qty: 0,
+    bgColor: color.color6,
+  },
+  {
     id: '3d2863d8-5ab4-4552-8387-883e09d6d764',
     code: '',
     name: '忍',
@@ -71,7 +78,6 @@ export default [
     code: 'MZGLHJ',
     name: '火计',
     qty: 0,
-    qtyMax: 3,
     bgColor: color.color6,
   },
   {
