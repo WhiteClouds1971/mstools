@@ -21,6 +21,7 @@
 <template>
   <van-swipe-cell>
     <hide-card
+      :key="props.id"
       :is-hide="props.isHide"
       :name="props.name"
       :hs-color="props.hsColor"

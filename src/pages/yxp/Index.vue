@@ -6,6 +6,7 @@
   import AddCard from '@/pages/yxp/Comp/AddCard.vue';
   import DynamicGridLayout from '@/components/DynamicGridLayout.vue';
   import DelCard from '@/pages/yxp/Comp/DelCard.vue';
+  import { v4 } from 'uuid';
 
   const data = reactive({
     activeNames: [],
@@ -13,6 +14,7 @@
     eye: true,
     addShow: false,
     tempCard: {
+      id: '',
       name: {},
       hs: {},
       number: {},
@@ -28,6 +30,7 @@
 
   const onCancel = () => {
     data.tempCard = {
+      id: '',
       name: {},
       hs: {},
       number: {},
@@ -36,12 +39,13 @@
   };
 
   const onOK = () => {
+    data.tempCard.id = v4();
     data.addedCards.push(data.tempCard);
     onCancel();
   };
 
-  const handleDel = index => {
-    const i = Number(index);
+  const handleDel = id => {
+    const i = data.addedCards.findIndex(card => card.id === id);
     data.addedCards.splice(i, 1);
   };
 </script>
@@ -71,7 +75,8 @@
       <dynamic-grid-layout style="margin-top: 8px" fixed-columns="3">
         <del-card
           v-for="(item, index) in data.addedCards"
-          :id="index.toString()"
+          :key="item.id"
+          :id="item.id"
           :is-hide="!data.eye"
           :number="item.number.name"
           :hs-icon="item.hs.icon"

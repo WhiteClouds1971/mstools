@@ -13,6 +13,10 @@
     isHide: props.isHide,
   });
 
+  const onClick = () => {
+    data.isHide = !data.isHide;
+  };
+
   watch(
     () => props.isHide,
     newValue => {
@@ -22,7 +26,7 @@
 </script>
 
 <template>
-  <div @click="data.isHide = !data.isHide">
+  <div @click.stop="onClick">
     <card-item
       v-if="data.isHide"
       :number="'**'"
