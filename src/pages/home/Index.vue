@@ -25,7 +25,7 @@
     <dynamic-grid-layout :fixed-columns="2">
       <menu-card
         v-for="config in menuCardConfig"
-        :key="config.code"
+        :key="config.id"
         :config="config"
         @click="callback(config)"
       />

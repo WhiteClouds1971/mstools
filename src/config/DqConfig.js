@@ -127,4 +127,25 @@ export default [
     code: '',
     images: ['./DQ/除害.jpg'],
   },
+  {
+    id: '6dcde274-1df6-4ff9-9da2-46e55f5277e9',
+    name: '神速',
+    bgColor: color.wei,
+    code: '',
+    images: ['./DQ/神速大旗.jpeg'],
+  },
+  {
+    id: '4a3e6823-6cf3-4941-888b-d650b11fa105',
+    name: '十常侍',
+    bgColor: color.qun,
+    code: '',
+    images: ['./DQ/qun.十常侍.png'],
+  },
+  {
+    id: '8105d9f9-161f-40c7-917f-ac6ab295b207',
+    name: '巧思',
+    bgColor: color.color3,
+    code: '',
+    images: ['./DQ/wei.水转百戏图.png'],
+  },
 ];
