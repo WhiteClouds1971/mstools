@@ -69,4 +69,11 @@ export default [
     name: '阴阳转化',
     url: '/yyzh',
   },
+  // 选中势力
+  {
+    code: 'XUANZHESHILI',
+    cover: './MenuImage/势力卡.png',
+    name: '势力卡',
+    url: '/xlk',
+  },
 ];

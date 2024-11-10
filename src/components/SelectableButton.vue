@@ -14,11 +14,20 @@
   const props = defineProps({
     canSelect: Boolean,
     clearSelection: Boolean,
+    selected: Boolean, // 新增属性，用于接收父组件传递的选中状态
   });
 
   const emit = defineEmits(['click', 'clearSelection']);
 
-  const isSelected = ref(false);
+  const isSelected = ref(props.selected || false); // 默认值根据 props.selected 设置
+
+  // 监听 selected 属性的变化
+  watch(
+    () => props.selected,
+    newVal => {
+      isSelected.value = newVal;
+    }
+  );
 
   const toggleSelection = () => {
     if (props.canSelect) {
