@@ -7,6 +7,7 @@ import yyzh from '@/pages/yyzh/index.js';
 import xlk from '@/pages/xlk/index.js';
 import yxp from '@/pages/yxp/index.js';
 import dq from '@/pages/dq/index.js';
+import heroes from '@/pages/heroes/index.js';
 
 export default []
   .concat(home)
@@ -17,4 +18,5 @@ export default []
   .concat(yyzh)
   .concat(xlk)
   .concat(yxp)
-  .concat(dq);
+  .concat(dq)
+  .concat(heroes);

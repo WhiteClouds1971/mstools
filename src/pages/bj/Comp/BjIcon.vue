@@ -15,11 +15,11 @@
 <template>
   <div class="circle-container">
     <!-- 底层图片 -->
-    <van-image class="background-image" src="./BJ/bjbj-1.png"></van-image>
+    <van-image class="background-image" :src="'/BJ/bjbj-1.png'"></van-image>
     <!-- 背景颜色层 -->
     <div class="color-layer" :style="{ backgroundColor: props.color }"></div>
     <!-- 顶层图片 -->
-    <van-image class="top-image" src="./BJ/bjbj-2.png"></van-image>
+    <van-image class="top-image" src="/BJ/bjbj-2.png"></van-image>
     <!-- 居中文本 -->
     <div class="centered-number" :style="{ fontSize }">{{ props.name }}</div>
   </div>

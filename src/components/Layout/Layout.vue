@@ -32,7 +32,6 @@
   <div class="main">
     <router-view></router-view>
   </div>
-  <van-back-top />
 </template>
 
 <style lang="less" scoped>

@@ -68,7 +68,7 @@ export default [
   },
   {
     id: '7ecc46e6-ba1f-43a5-a602-0896562b38f6',
-    code: '',
+    code: 'MZGLHJ',
     name: '火计',
     qty: 0,
     qtyMax: 3,

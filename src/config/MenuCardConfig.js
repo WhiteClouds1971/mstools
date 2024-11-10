@@ -3,7 +3,7 @@ export default [
   {
     id: 'eb65c14a-4de3-4e19-8dde-ef80f3a28eec',
     code: 'TLK',
-    cover: './MenuImage/体力卡.png',
+    cover: '/MenuImage/体力卡.png',
     name: '体力卡',
     url: '/tlk',
   },
@@ -11,7 +11,7 @@ export default [
   {
     id: '952286a4-0a69-4575-a3be-82a9cad624aa',
     code: '游戏牌',
-    cover: './MenuImage/游戏牌.jpg',
+    cover: '/MenuImage/游戏牌.jpg',
     name: '游戏牌',
     url: '/yxp',
   },
@@ -19,7 +19,7 @@ export default [
   {
     id: 'd6a3f4f5-511a-4a78-b8cd-68b3c27f4d4c',
     code: 'BJ',
-    cover: './MenuImage/标记.jpg',
+    cover: '/MenuImage/标记.jpg',
     name: '标记',
     url: '/bj',
   },
@@ -27,7 +27,7 @@ export default [
   {
     id: '773fdd4d-335a-4738-b1ab-190f00c98838',
     code: 'YINYANGZHUANHUAN',
-    cover: './MenuImage/阴阳转化.png',
+    cover: '/MenuImage/阴阳转化.png',
     name: '阴阳转化',
     url: '/yyzh',
   },
@@ -35,7 +35,7 @@ export default [
   {
     id: '4cf5873d-4223-4a47-850c-fd21ae38e30f',
     code: '大旗',
-    cover: './MenuImage/大旗.jpg',
+    cover: '/MenuImage/大旗.jpg',
     name: '大旗',
     url: '/dq',
   },
@@ -43,7 +43,7 @@ export default [
   {
     id: '8ed689ff-c1c1-4348-9531-33134d7a28b3',
     code: 'XUANZHESHILI',
-    cover: './MenuImage/势力卡.png',
+    cover: '/MenuImage/势力卡.png',
     name: '势力卡',
     url: '/xlk',
   },
@@ -51,7 +51,7 @@ export default [
   {
     id: 'eb144c42-9955-4e67-bee3-4d4b48a25d1e',
     code: 'MOUYI',
-    cover: './MenuImage/谋奕.jpg',
+    cover: '/MenuImage/谋奕.jpg',
     name: '谋奕',
     getModal: data => {
       return {
@@ -66,7 +66,7 @@ export default [
   {
     id: '4e28b1e2-f91d-437f-af80-00ea56115f24',
     code: 'JSWZ',
-    cover: './MenuImage/记录角色.webp',
+    cover: '/MenuImage/记录角色.webp',
     name: '记录角色',
     url: '/jswz',
   },
@@ -74,7 +74,7 @@ export default [
   {
     id: '4e7cf638-f846-4a93-9ef7-1ec6fdd67518',
     code: 'JLHS',
-    cover: './MenuImage/花色.jpg',
+    cover: '/MenuImage/花色.jpg',
     name: '记录花色',
     getModal: data => {
       return {
@@ -89,7 +89,7 @@ export default [
   {
     id: '5ee88300-47fe-4163-b9fa-a5c7c62c2c72',
     code: 'JLLX',
-    cover: './MenuImage/类型.jpg',
+    cover: '/MenuImage/类型.jpg',
     name: '记录类型',
     getModal: data => {
       return {
@@ -103,7 +103,7 @@ export default [
   {
     id: 'aa3d99ff-0444-4f93-8f2a-2c50f39c6366',
     code: '',
-    cover: './MenuImage/李傕.png',
+    cover: '/MenuImage/李傕.png',
     name: '李傕',
     getModal: data => {
       return {
@@ -136,7 +136,7 @@ export default [
   {
     id: '410a4665-6f92-4ec3-9690-ed519a42ead4',
     code: '',
-    cover: './MenuImage/徐荣.png',
+    cover: '/MenuImage/徐荣.png',
     name: '徐荣',
     getModal: data => {
       return {
@@ -163,5 +163,12 @@ export default [
         },
       };
     },
+  },
+  {
+    id: '3305d53d-8128-47b8-8472-9e42c40e1325',
+    code: '',
+    cover: '/MenuImage/谋诸葛亮.png',
+    name: '谋诸葛亮',
+    url:'/heroes/mzgl'
   },
 ];
