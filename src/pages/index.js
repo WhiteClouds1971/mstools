@@ -5,6 +5,7 @@ import jswz from '@/pages/jswz/index.js';
 import bj from '@/pages/bj/index.js';
 import yyzh from '@/pages/yyzh/index.js';
 import xlk from '@/pages/xlk/index.js';
+import yxp from '@/pages/yxp/index.js';
 
 export default []
   .concat(home)
@@ -13,4 +14,5 @@ export default []
   .concat(jswz)
   .concat(bj)
   .concat(yyzh)
-  .concat(xlk);
+  .concat(xlk)
+  .concat(yxp);

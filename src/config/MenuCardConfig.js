@@ -76,4 +76,11 @@ export default [
     name: '势力卡',
     url: '/xlk',
   },
+  // 游戏牌
+  {
+    code: '游戏牌',
+    cover: './MenuImage/游戏牌.jpg',
+    name: '游戏牌',
+    url: '/yxp',
+  },
 ];
