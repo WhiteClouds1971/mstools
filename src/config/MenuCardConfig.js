@@ -185,11 +185,11 @@ export default [
     name: '卧龙凤雏',
     url:'/heroes/wolongfengchu'
   },
-  {
-    id: 'c4abe401-102d-4a2e-9a24-fadcd2e17780',
-    code: '',
-    cover: '/MenuImage/神张角.png',
-    name: '神张角',
-    url:'/heroes/shenzhangjiao'
-  },
+  // {
+  //   id: 'c4abe401-102d-4a2e-9a24-fadcd2e17780',
+  //   code: '',
+  //   cover: '/MenuImage/神张角.png',
+  //   name: '神张角',
+  //   url:'/heroes/shenzhangjiao'
+  // },
 ];
