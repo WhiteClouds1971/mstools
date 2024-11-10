@@ -15,4 +15,20 @@ export default [
       title: '骆统',
     },
   },
+  {
+    name: 'wolongfengchu',
+    path: '/heroes/wolongfengchu',
+    component: () => import('./wolongfengchu/Index.vue'),
+    meta: {
+      title: '卧龙凤雏',
+    },
+  },
+  {
+    name: 'shenzhangjiao',
+    path: '/heroes/shenzhangjiao',
+    component: () => import('./shenzhangjiao/Index.vue'),
+    meta: {
+      title: '神张角',
+    },
+  },
 ];

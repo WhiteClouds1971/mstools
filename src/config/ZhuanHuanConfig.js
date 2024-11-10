@@ -91,7 +91,7 @@ export default [
   },
   {
     id: '5b1d1d73-84d8-4dbf-b1f2-256f74c58ce9',
-    code: '',
+    code: 'wolongfengchu',
     name: '游龙',
     bgColor: color.color6,
     text: '转换技，阳：每轮限一次，你可以废除你装备区里的一个装备栏，视为使用一张未以此法使用过的普通锦囊牌；阴：每轮限一次，你可以废除你装备区里的一个装备栏，视为使用一张未以此法使用过的基本牌。',

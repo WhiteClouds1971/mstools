@@ -178,4 +178,18 @@ export default [
     name: '骆统',
     url:'/heroes/loutongdaf'
   },
+  {
+    id: '2802f440-fb5a-415d-be41-6b63b75f6f52',
+    code: '',
+    cover: '/MenuImage/卧龙凤雏.png',
+    name: '卧龙凤雏',
+    url:'/heroes/wolongfengchu'
+  },
+  {
+    id: 'c4abe401-102d-4a2e-9a24-fadcd2e17780',
+    code: '',
+    cover: '/MenuImage/神张角.png',
+    name: '神张角',
+    url:'/heroes/shenzhangjiao'
+  },
 ];
