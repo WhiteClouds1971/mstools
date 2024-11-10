@@ -27,6 +27,13 @@ export default [
     name: '阴阳转化',
     url: '/yyzh',
   },
+  // 大旗
+  {
+    code: '大旗',
+    cover: './MenuImage/大旗.jpg',
+    name: '大旗',
+    url: '/dq',
+  },
   // 选中势力
   {
     code: 'XUANZHESHILI',

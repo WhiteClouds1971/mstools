@@ -23,6 +23,7 @@
       :color="item.bgColor"
       :qty-max="item.qtyMax"
       v-for="item in data"
+      :key="item.id"
     ></bj-item>
   </div>
 </template>
@@ -32,13 +33,14 @@
   import bjConfig from '@/config/BjConfig.js';
   import DynamicGridLayout from '@/components/DynamicGridLayout.vue';
   import SelectableButton from '@/components/SelectableButton.vue';
+  import _ from 'lodash';
 
   const all = reactive(bjConfig);
 
   const data = reactive([]);
 
   const add = config => {
-    data.push(config);
+    data.push(_.cloneDeep(config));
   };
 </script>
 

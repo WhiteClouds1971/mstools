@@ -63,7 +63,7 @@ export default [
     id: '1f4f966d-7790-40ce-ab5c-ca2f10baabeb',
     code: '',
     name: '锦织',
-    qty: 1,
+    qty: 0,
     bgColor: color.color7,
   },
   {

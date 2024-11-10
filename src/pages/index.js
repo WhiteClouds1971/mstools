@@ -6,6 +6,7 @@ import bj from '@/pages/bj/index.js';
 import yyzh from '@/pages/yyzh/index.js';
 import xlk from '@/pages/xlk/index.js';
 import yxp from '@/pages/yxp/index.js';
+import dq from '@/pages/dq/index.js';
 
 export default []
   .concat(home)
@@ -15,4 +16,5 @@ export default []
   .concat(bj)
   .concat(yyzh)
   .concat(xlk)
-  .concat(yxp);
+  .concat(yxp)
+  .concat(dq);
