@@ -1,62 +1,38 @@
-<template>
-  <div class="wrapper">
-    <div class="hjz">
-      <div class="number">
-        {{ data.hjz }}
-        <van-icon
-          class="iconfont icon-hujia icon margin-left"
-          color="#808080"
-        />
-      </div>
-    </div>
-    <div class="hjz margin-top">
-      <div class="number">
-        <span>{{ data.tlz }}/</span>
-        <span>{{ data.tlsx }}</span>
-        <van-icon
-          class="iconfont icon-shoushuchuxieliang icon margin-left"
-          color="#FF0000"
-        />
-      </div>
-    </div>
-    <div class="qty margin-top" >
-      <cus-stepper
-        v-model:value="data.hjz"
-        title="护甲值"
-        :min="0"
-        :max="5"
-      />
-      <cus-stepper
-        class="margin-top"
-        v-model:value="data.tlz"
-        title="体力值"
-        :min="1"
-      />
-      <cus-stepper
-        class="margin-top"
-        v-model:value="data.tlsx"
-        title="体力上限"
-      />
-    </div>
-  </div>
-</template>
-
 <script setup>
+  import bjConfig from '@/config/BjConfig.js';
+  import _ from 'lodash';
+  import BjItem from '@/pages/bj/Comp/BjItem.vue';
   import CusStepper from '@/components/CusStepper.vue';
 
   const data = reactive({
-    hjz: 0, // 护甲值
-    tlz: 0, // 体力值
-    tlsx: 0, // 体力上线
+    lunQty: 0,
+    tlz: 3,
+    tlsx: 3,
+  });
+
+  const lun = computed(() => {
+    return _.cloneDeep(bjConfig.find(it => it.code === 'lun'));
   });
 
   watch(
-      () => data.tlsx,
-      newValue => {
-        if (newValue < data.tlz) {
-          data.tlz = newValue
-        }
+    () => data.lunQty,
+    newValue => {
+      if (newValue <= 4) {
+        data.tlsx++;
+        data.tlz++;
+      } else if (newValue <= 7) {
+        data.tlsx--;
       }
+    }
+  );
+
+  watch(
+    () => data.tlsx,
+    newValue => {
+      if (newValue < data.tlz) {
+        data.tlz = newValue
+      }
+    }
   );
 
   watch(
@@ -69,15 +45,46 @@
   );
 </script>
 
-<style lang="less" scoped>
+<template>
+  <div class="wrapper">
+    <bj-item
+      v-model:value="data.lunQty"
+      :name="lun.name"
+      :color="lun.bgColor"
+    ></bj-item>
+
+    <div class="hjz" style="margin-top: 20px">
+      <div class="number">
+        <span>{{ data.tlz }}/</span>
+        <span>{{ data.tlsx }}</span>
+        <van-icon
+          class="iconfont icon-shoushuchuxieliang icon margin-left"
+          color="#FF0000"
+        />
+      </div>
+    </div>
+
+    <div class="qty">
+      <cus-stepper
+        style="margin-top: 20px"
+        v-model:value="data.tlz"
+        title="体力值"
+        :min="1"
+      />
+      <cus-stepper
+        style="margin-top: 20px"
+        v-model:value="data.tlsx"
+        title="体力上限"
+      />
+    </div>
+  </div>
+</template>
+
+<style scoped lang="less">
   .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 8px;
-    font-family: 'Heiti SC', serif;
     background-color: #f7f8fa;
+    font-family: 'Heiti SC', serif;
 
     .hjz {
       width: 100%;
@@ -108,13 +115,5 @@
       background-color: #fff;
       width: 100%;
     }
-  }
-
-  .margin-top {
-    margin-top: 20px;
-  }
-
-  .margin-left {
-    margin-left: 14px;
   }
 </style>

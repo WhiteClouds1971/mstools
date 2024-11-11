@@ -221,4 +221,11 @@ export default [
     name: '曹髦',
     url: '/heroes/caomao',
   },
+  {
+    id: '475e30f3-db6e-43dc-9da2-db061b555956',
+    code: '',
+    cover: '/MenuImage/杨彪.png',
+    name: '杨彪',
+    url: '/heroes/yangbiao',
+  },
 ];

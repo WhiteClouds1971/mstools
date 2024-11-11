@@ -55,4 +55,12 @@ export default [
       title: '极略神司马',
     },
   },
+  {
+    name: 'yangbiao',
+    path: '/heroes/yangbiao',
+    component: () => import('./yangbiao/Index.vue'),
+    meta: {
+      title: '杨彪',
+    },
+  },
 ];

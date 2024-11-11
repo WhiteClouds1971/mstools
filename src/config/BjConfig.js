@@ -10,7 +10,7 @@ export default [
   },
   {
     id: '01436680-8d8d-4d03-a250-dc8ab6b84a25',
-    code: '',
+    code: 'lun',
     name: '轮',
     qty: 0,
     bgColor: color.black,

@@ -28,11 +28,21 @@
 <template>
   <div class="bj">
     <bj-icon
-      style="width: 3.5cm; height: 2.5cm"
+      style="width: 2.5cm; height: 2.5cm"
       :color="props.color"
       :name="props.name"
     ></bj-icon>
-    <CusStepper v-model:value="data.qty" :min="0" :max="props.qtyMax" />
+
+    <van-stepper
+        v-model="data.qty"
+        theme="round"
+        input-width="140px"
+        button-size="40px"
+        disable-input
+        :min="0"
+        :max="props.max"
+    />
+<!--    <CusStepper v-model:value="data.qty" :min="0" :max="props.qtyMax" />-->
   </div>
 </template>
 
@@ -42,7 +52,7 @@
   .bj {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Heiti SC', serif;
     background-color: #fff;

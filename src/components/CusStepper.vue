@@ -56,5 +56,9 @@
     width: 100%;
     align-items: center; /* 垂直居中 */
     justify-content: space-around; /* 水平分布，使 title 和 stepper 分开 */
+
+    .title {
+      width: 100px;
+    }
   }
 </style>
