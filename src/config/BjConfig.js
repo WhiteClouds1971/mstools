@@ -96,4 +96,12 @@ export default [
     qtyMax: 8,
     bgColor: color.color2,
   },
+  {
+    id: 'b9c1560a-050f-4564-84a4-241fbe856b03',
+    code: '',
+    name: '严教',
+    qty: 0,
+    qtyMax: 4,
+    bgColor: color.wei,
+  },
 ];

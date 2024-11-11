@@ -3,11 +3,14 @@
   import _ from 'lodash';
   import BjItem from '@/pages/bj/Comp/BjItem.vue';
   import CusStepper from '@/components/CusStepper.vue';
+  import TILK from '@/components/TILK.vue';
 
   const data = reactive({
     lunQty: 0,
-    tlz: 3,
-    tlsx: 3,
+    tilk: {
+      tlz: 3,
+      tlsx: 3,
+    },
   });
 
   const lun = computed(() => {
@@ -18,30 +21,12 @@
     () => data.lunQty,
     newValue => {
       if (newValue <= 4) {
-        data.tlsx++;
-        data.tlz++;
+        data.tilk.tlsx++;
+        data.tilk.tlz++;
       } else if (newValue <= 7) {
-        data.tlsx--;
+        data.tilk.tlsx--;
       }
     }
-  );
-
-  watch(
-    () => data.tlsx,
-    newValue => {
-      if (newValue < data.tlz) {
-        data.tlz = newValue
-      }
-    }
-  );
-
-  watch(
-      () => data.tlz,
-      newValue => {
-        if (newValue > data.tlsx) {
-          data.tlsx = newValue
-        }
-      }
   );
 </script>
 
@@ -51,32 +36,9 @@
       v-model:value="data.lunQty"
       :name="lun.name"
       :color="lun.bgColor"
+      :qty-max="7"
     ></bj-item>
-
-    <div class="hjz" style="margin-top: 20px">
-      <div class="number">
-        <span>{{ data.tlz }}/</span>
-        <span>{{ data.tlsx }}</span>
-        <van-icon
-          class="iconfont icon-shoushuchuxieliang icon margin-left"
-          color="#FF0000"
-        />
-      </div>
-    </div>
-
-    <div class="qty">
-      <cus-stepper
-        style="margin-top: 20px"
-        v-model:value="data.tlz"
-        title="体力值"
-        :min="1"
-      />
-      <cus-stepper
-        style="margin-top: 20px"
-        v-model:value="data.tlsx"
-        title="体力上限"
-      />
-    </div>
+    <t-i-l-k style="margin-top: 20px" :tilk="data.tilk"></t-i-l-k>
   </div>
 </template>
 

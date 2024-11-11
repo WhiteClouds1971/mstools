@@ -109,6 +109,13 @@ export default [
     url: '/heroes/jilueshensima',
   },
   {
+    id: '8588d9ce-3f97-40cc-9262-7aa543e4a902',
+    code: 'shenguojia',
+    cover: '/MenuImage/神郭嘉.png',
+    name: '神郭嘉',
+    url: '/heroes/shenguojia',
+  },
+  {
     id: '3305d53d-8128-47b8-8472-9e42c40e1325',
     code: '',
     cover: '/MenuImage/谋诸葛亮.png',

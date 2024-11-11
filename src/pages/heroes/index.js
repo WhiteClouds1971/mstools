@@ -63,4 +63,12 @@ export default [
       title: '杨彪',
     },
   },
+  {
+    name: 'shenguojia',
+    path: '/heroes/shenguojia',
+    component: () => import('./shenguojia/Index.vue'),
+    meta: {
+      title: '神郭嘉',
+    },
+  },
 ];

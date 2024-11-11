@@ -1,6 +1,10 @@
 <template>
   <div class="main">
-    <dynamic-grid-layout :auto-layout-threshold="8" :max-columns="4">
+    <dynamic-grid-layout
+      :fixed-columns="props.fixedColumns"
+      :auto-layout-threshold="8"
+      :max-columns="4"
+    >
       <selectable-button
         v-for="(item, index) in data"
         :key="item.id"
@@ -18,6 +22,9 @@
   import DynamicGridLayout from '@/components/DynamicGridLayout.vue';
   import SelectableButton from '@/components/SelectableButton.vue';
 
+  const props = defineProps({
+    fixedColumns: Number,
+  });
   const clearSelection = ref(false);
   const data = reactive([
     { id: 1, code: 1, name: '1号位' },

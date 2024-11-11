@@ -40,7 +40,7 @@
         button-size="40px"
         disable-input
         :min="0"
-        :max="props.max"
+        :max="props.qtyMax"
     />
 <!--    <CusStepper v-model:value="data.qty" :min="0" :max="props.qtyMax" />-->
   </div>
