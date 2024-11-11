@@ -70,6 +70,7 @@
     justify-content: center;
     align-items: center;
     background-color: #fff;
+    font-family: 'Heiti SC', serif;
 
     .number {
       font-size: 110px;

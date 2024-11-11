@@ -46,36 +46,5 @@
   .wrapper {
     padding: 8px;
     background-color: #f7f8fa;
-    font-family: 'Heiti SC', serif;
-
-    .hjz {
-      width: 100%;
-      padding: 8px; /* 添加一些内边距以增加美观性 */
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      background-color: #fff;
-
-      .number {
-        font-size: 110px;
-        font-weight: bold;
-        position: relative; /* 设置为相对定位 */
-
-        .icon {
-          font-size: 40px;
-          font-weight: bold;
-          position: absolute; /* 设置为绝对定位 */
-          bottom: 25px; /* 距离底部0距离 */
-          right: -50px; /* 距离右侧0距离 */
-        }
-      }
-    }
-
-    .qty {
-      padding: 8px 0;
-      background-color: #fff;
-      width: 100%;
-    }
   }
 </style>

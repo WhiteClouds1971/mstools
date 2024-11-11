@@ -104,4 +104,11 @@ export default [
     qtyMax: 4,
     bgColor: color.wei,
   },
+  {
+    id: '9632af15-1693-45d2-b8f6-6d1d2fb49efb',
+    code: 'songwei',
+    name: '颂威',
+    qty: 0,
+    bgColor: color.color3,
+  },
 ];

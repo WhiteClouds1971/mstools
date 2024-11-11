@@ -148,4 +148,18 @@ export default [
     code: '',
     images: ['/DQ/wei.水转百戏图.png'],
   },
+  {
+    id: 'f07a6121-a355-43bd-9c5b-86bd790d3dae',
+    name: '荐杰',
+    bgColor: color.qun,
+    code: '',
+    images: ['/DQ/qun.荐杰.png'],
+  },
+  {
+    id: '0c7c00c5-3947-473d-b94c-b556a94f272c',
+    name: '曹丕',
+    bgColor: color.color3,
+    code: 'moucaopi',
+    images: ['/DQ/wei.行殇.png'],
+  },
 ];

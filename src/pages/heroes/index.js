@@ -71,4 +71,12 @@ export default [
       title: '神郭嘉',
     },
   },
+  {
+    name: 'moucaopi',
+    path: '/heroes/moucaopi',
+    component: () => import('./moucaopi/Index.vue'),
+    meta: {
+      title: '谋曹丕',
+    },
+  },
 ];

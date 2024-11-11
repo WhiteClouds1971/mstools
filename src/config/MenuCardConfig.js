@@ -137,6 +137,13 @@ export default [
     url: '/heroes/yangbiao',
   },
   {
+    id: 'e60dee1d-7047-48e6-8587-bc263c6bd19f',
+    code: '',
+    cover: '/MenuImage/谋曹丕.png',
+    name: '谋曹丕',
+    url: '/heroes/moucaopi',
+  },
+  {
     id: 'aa3d99ff-0444-4f93-8f2a-2c50f39c6366',
     code: '',
     cover: '/MenuImage/李傕.png',

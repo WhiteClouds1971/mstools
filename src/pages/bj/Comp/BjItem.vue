@@ -34,15 +34,14 @@
     ></bj-icon>
 
     <van-stepper
-        v-model="data.qty"
-        theme="round"
-        input-width="140px"
-        button-size="40px"
-        disable-input
-        :min="0"
-        :max="props.qtyMax"
+      v-model="data.qty"
+      theme="round"
+      input-width="140px"
+      button-size="40px"
+      disable-input
+      :min="0"
+      :max="props.qtyMax"
     />
-<!--    <CusStepper v-model:value="data.qty" :min="0" :max="props.qtyMax" />-->
   </div>
 </template>
 
