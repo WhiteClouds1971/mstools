@@ -6,6 +6,10 @@
     value: Number,
     min: Number,
     max: Number,
+    step: {
+      type: Number,
+      default: 1,
+    },
   });
 
   const emit = defineEmits(['update:value']);
@@ -40,6 +44,7 @@
         disable-input
         :min="props.min"
         :max="props.max"
+        :step="props.step"
       />
     </div>
   </div>

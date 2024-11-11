@@ -186,10 +186,31 @@ export default [
     url:'/heroes/wolongfengchu'
   },
   // {
+  //   id: 'b3312486-f5d9-476e-b720-44e182d44d1e',
+  //   code: '',
+  //   cover: '/MenuImage/神荀彧.png',
+  //   name: '神荀彧',
+  //   url:'/heroes/shenxunyu'
+  // },
+  // {
   //   id: 'c4abe401-102d-4a2e-9a24-fadcd2e17780',
   //   code: '',
   //   cover: '/MenuImage/神张角.png',
   //   name: '神张角',
   //   url:'/heroes/shenzhangjiao'
   // },
+  {
+    id: 'd72f062a-fd0e-4830-99c8-9e6bcd534f3a',
+    code: '',
+    cover: '/MenuImage/孙寒华.png',
+    name: '孙寒华',
+    url:'/heroes/sunhanhua'
+  },
+  {
+    id: 'ec2942e1-f61e-497f-9451-04466372ba46',
+    code: '',
+    cover: '/MenuImage/曹髦.png',
+    name: '曹髦',
+    url:'/heroes/caomao'
+  },
 ];

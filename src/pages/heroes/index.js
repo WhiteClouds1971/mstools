@@ -31,4 +31,20 @@ export default [
       title: '神张角',
     },
   },
+  {
+    name: 'sunhanhua',
+    path: '/heroes/sunhanhua',
+    component: () => import('./sunhanhua/Index.vue'),
+    meta: {
+      title: '孙寒华',
+    },
+  },
+  {
+    name: 'caomao',
+    path: '/heroes/caomao',
+    component: () => import('./caomao/Index.vue'),
+    meta: {
+      title: '曹髦',
+    },
+  },
 ];
