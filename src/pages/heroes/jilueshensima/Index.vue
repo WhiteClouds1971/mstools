@@ -77,7 +77,10 @@
       :color="ren.bgColor"
       :name="ren.name"
     ></bj-item>
-    <selectable-skills :skills="data.skills"></selectable-skills>
+    <selectable-skills
+      style="margin-top: 20px"
+      :skills="data.skills"
+    ></selectable-skills>
   </div>
 </template>
 
