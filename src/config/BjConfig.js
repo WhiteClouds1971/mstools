@@ -24,7 +24,7 @@ export default [
   },
   {
     id: '3d2863d8-5ab4-4552-8387-883e09d6d764',
-    code: '',
+    code: 'ren',
     name: '忍',
     qty: 0,
     bgColor: color.color1,

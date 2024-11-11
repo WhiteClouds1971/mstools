@@ -47,4 +47,12 @@ export default [
       title: '曹髦',
     },
   },
+  {
+    name: 'jilueshensima',
+    path: '/heroes/jilueshensima',
+    component: () => import('./jilueshensima/Index.vue'),
+    meta: {
+      title: '极略神司马',
+    },
+  },
 ];

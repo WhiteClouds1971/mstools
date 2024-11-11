@@ -100,6 +100,14 @@ export default [
       };
     },
   },
+  // 记录牌类型
+  {
+    id: 'f75bf209-a33e-4507-a384-3976b455a849',
+    code: 'jilueshensima',
+    cover: '/MenuImage/极略神司马.png',
+    name: '极略神司马',
+    url: '/heroes/jilueshensima',
+  },
   {
     id: 'aa3d99ff-0444-4f93-8f2a-2c50f39c6366',
     code: '',
@@ -169,21 +177,21 @@ export default [
     code: '',
     cover: '/MenuImage/谋诸葛亮.png',
     name: '谋诸葛亮',
-    url:'/heroes/mzgl'
+    url: '/heroes/mzgl',
   },
   {
     id: 'c122c179-eb82-414d-bf53-3fac5295669e',
     code: '',
     cover: '/MenuImage/骆统.png',
     name: '骆统',
-    url:'/heroes/loutongdaf'
+    url: '/heroes/loutongdaf',
   },
   {
     id: '2802f440-fb5a-415d-be41-6b63b75f6f52',
     code: '',
     cover: '/MenuImage/卧龙凤雏.png',
     name: '卧龙凤雏',
-    url:'/heroes/wolongfengchu'
+    url: '/heroes/wolongfengchu',
   },
   // {
   //   id: 'b3312486-f5d9-476e-b720-44e182d44d1e',
@@ -204,13 +212,13 @@ export default [
     code: '',
     cover: '/MenuImage/孙寒华.png',
     name: '孙寒华',
-    url:'/heroes/sunhanhua'
+    url: '/heroes/sunhanhua',
   },
   {
     id: 'ec2942e1-f61e-497f-9451-04466372ba46',
     code: '',
     cover: '/MenuImage/曹髦.png',
     name: '曹髦',
-    url:'/heroes/caomao'
+    url: '/heroes/caomao',
   },
 ];
