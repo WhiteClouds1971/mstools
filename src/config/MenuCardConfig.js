@@ -109,6 +109,27 @@ export default [
     url: '/heroes/jilueshensima',
   },
   {
+    id: '3305d53d-8128-47b8-8472-9e42c40e1325',
+    code: '',
+    cover: '/MenuImage/谋诸葛亮.png',
+    name: '谋诸葛亮',
+    url: '/heroes/mzgl',
+  },
+  {
+    id: 'ec2942e1-f61e-497f-9451-04466372ba46',
+    code: '',
+    cover: '/MenuImage/曹髦.png',
+    name: '曹髦',
+    url: '/heroes/caomao',
+  },
+  {
+    id: '475e30f3-db6e-43dc-9da2-db061b555956',
+    code: '',
+    cover: '/MenuImage/杨彪.png',
+    name: '杨彪',
+    url: '/heroes/yangbiao',
+  },
+  {
     id: 'aa3d99ff-0444-4f93-8f2a-2c50f39c6366',
     code: '',
     cover: '/MenuImage/李傕.png',
@@ -173,13 +194,6 @@ export default [
     },
   },
   {
-    id: '3305d53d-8128-47b8-8472-9e42c40e1325',
-    code: '',
-    cover: '/MenuImage/谋诸葛亮.png',
-    name: '谋诸葛亮',
-    url: '/heroes/mzgl',
-  },
-  {
     id: 'c122c179-eb82-414d-bf53-3fac5295669e',
     code: '',
     cover: '/MenuImage/骆统.png',
@@ -213,19 +227,5 @@ export default [
     cover: '/MenuImage/孙寒华.png',
     name: '孙寒华',
     url: '/heroes/sunhanhua',
-  },
-  {
-    id: 'ec2942e1-f61e-497f-9451-04466372ba46',
-    code: '',
-    cover: '/MenuImage/曹髦.png',
-    name: '曹髦',
-    url: '/heroes/caomao',
-  },
-  {
-    id: '475e30f3-db6e-43dc-9da2-db061b555956',
-    code: '',
-    cover: '/MenuImage/杨彪.png',
-    name: '杨彪',
-    url: '/heroes/yangbiao',
   },
 ];
