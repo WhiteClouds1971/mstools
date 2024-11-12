@@ -6,7 +6,7 @@ export default [
     name: '隐匿',
     bgColor: color.color1,
     code: '',
-    images: ['/DQ/shu.鸿图.png'],
+    images: ['/DQ/隐匿.jpg'],
   },
   {
     id: '1c38c3f5-d795-4f5d-9b54-4ceebf86b656',

@@ -1,6 +1,5 @@
 <script setup>
   import HideCard from '@/pages/yxp/Comp/HideCard.vue';
-  import { defineEmits } from 'vue';
 
   const props = defineProps({
     id: String,

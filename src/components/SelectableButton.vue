@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-  import { ref, defineEmits, watch } from 'vue';
+  import { ref, watch } from 'vue';
 
   const props = defineProps({
     canSelect: Boolean,
