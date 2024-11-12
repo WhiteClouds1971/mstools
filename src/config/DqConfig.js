@@ -167,6 +167,6 @@ export default [
     name: '佐幸',
     bgColor: color.darkYellow,
     code: 'shenguojiazuoxin',
-    images: ['/DQ/wei.行殇.png'],
+    images: ['/DQ/shen.佐幸.png'],
   },
 ];
