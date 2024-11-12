@@ -42,15 +42,22 @@
     ],
   });
 
+  const update = () => {
+    data.skills.forEach(it => {
+      it.selected = data.dxz >= it.require;
+    });
+  };
+
   watch(
     () => data.dxz,
     newValue => {
-      data.skills.forEach(it => {
-        if (data.dxz >= it.require) it.selected = true;
-        else it.selected = false;
-      });
+      update();
     }
   );
+
+  onMounted(() => {
+    update();
+  });
 
   const onClick = add => {
     data.dxz += add;

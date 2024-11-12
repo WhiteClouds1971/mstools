@@ -3,7 +3,10 @@
   import SelectableButton from '@/components/SelectableButton.vue';
 
   const props = defineProps({
-    skills: [],
+    skills: {
+      type: Array,
+      default: () => [],
+    },
   });
 
   const canSelect = canSelect => {
