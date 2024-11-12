@@ -23,6 +23,7 @@
       v-model:value="data.qty"
       :name="sw.name"
       :color="sw.bgColor"
+      :qty-max="9"
     ></bj-item>
     <t-i-l-k style="margin-top: 20px" :tilk="data.tilk"></t-i-l-k>
     <van-image style="margin-top: 20px" :src="dq.images[0]"></van-image>

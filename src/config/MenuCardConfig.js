@@ -171,6 +171,47 @@ export default [
               des: '2 狗叫！',
             },
           ],
+          model:'unique',
+          count: 1,
+        },
+      };
+    },
+  },
+  {
+    id: 'e5f11b59-6354-4bcf-804b-d9026e2ba602',
+    code: '',
+    cover: '/MenuImage/庞德公.png',
+    name: '庞德公',
+    getModal: data => {
+      return {
+        component: () => import('@/modal/RandomDisplay.vue'),
+        modal: {
+          title: '擦拭',
+        },
+        props: {
+          items: [
+            {
+              id: '92df3722-0fad-49f5-a457-5d677731070c',
+              title: '卧龙',
+              des: '对一名角色造成1点火焰伤害。若场上有存活的卧龙诸葛亮，则改为对至多两名角色各造成1点火焰伤害。',
+            },
+            {
+              title: '凤雏',
+              id: '358bd350-29b4-4e42-8e06-901ffe6d3895',
+              des: '令至多三名角色进入连环状态。若场上有存活的庞统或SP庞统，则改为令至多四名角色进入连环状态。',
+            },
+            {
+              title: '水镜',
+              id: 'b48b352d-f46a-4dc1-a642-00729d752068',
+              des: '移动场上的一张防具牌。若场上有存活的司马徽，则改为移动场上的一张装备牌。',
+            },
+            {
+              title: '玄剑',
+              id: 'f19cc021-8ecf-43b3-9f25-7e094c5a9e33',
+              des: '令一名角色摸一张牌并回复1点体力。若场上有存活的徐庶或SP徐庶，则改为令一名角色摸一张牌并回复1点体力，然后你摸一张牌。',
+            },
+          ],
+          model:'unique',
           count: 1,
         },
       };
@@ -202,6 +243,7 @@ export default [
               des: '3.徐荣随机获得你装备区和手牌区里各一张牌。',
             },
           ],
+          model:'unique',
           count: 1,
         },
       };

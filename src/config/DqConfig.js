@@ -162,4 +162,11 @@ export default [
     code: 'moucaopi',
     images: ['/DQ/wei.行殇.png'],
   },
+  {
+    id: 'ea9068bd-fc62-4897-9da5-56c6d65643b4',
+    name: '佐幸',
+    bgColor: color.darkYellow,
+    code: 'shenguojiazuoxin',
+    images: ['/DQ/wei.行殇.png'],
+  },
 ];

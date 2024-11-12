@@ -5,7 +5,7 @@
   import SelectableSkills from '@/components/SelectableSkills.vue';
 
   const data = reactive({
-    dxz: 20,
+    dxz: 60,
     skills: [
       {
         id: '8841c02f-5205-4e29-8704-2c9e2e5154bb',
@@ -34,7 +34,7 @@
       {
         id: '13b7a710-545a-432c-b655-bb2e5c122fec',
         title: '决进',
-        des: '持恒技，限定技，出牌阶段，你可以令所有角色依次将体力值调整至1点并获得X点“护甲”（X为其因调整减少的体力值，你改为获得X+2点）。',
+        des: '持恒技，限定技，出牌阶段，你可以令所有角色依次将体力值调整至1点并获得X点“护甲”（X为其因调整减少的体力值，你改为获得X+2点）。然后令场上获得“向死存魏”光环效果，并将牌堆、弃牌堆、场上、所有角色手牌中的【闪】、【桃】、【酒】移出游戏。',
         require: 99,
         canSelect: false,
         selected: false,
