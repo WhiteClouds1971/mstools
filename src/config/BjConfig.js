@@ -23,6 +23,13 @@ export default [
     bgColor: color.color6,
   },
   {
+    id: 'a742752d-2e53-48cf-bbf8-f4f08e063a0b',
+    code: '',
+    name: '手牌',
+    qty: 0,
+    bgColor: color.color1,
+  },
+  {
     id: '3d2863d8-5ab4-4552-8387-883e09d6d764',
     code: 'ren',
     name: '忍',
