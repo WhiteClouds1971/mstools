@@ -79,4 +79,12 @@ export default [
       title: '谋曹丕',
     },
   },
+  {
+    name: 'zuxunyou',
+    path: '/heroes/zuxunyou',
+    component: () => import('./zuxunyou/Index.vue'),
+    meta: {
+      title: '族荀攸',
+    },
+  },
 ];

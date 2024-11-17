@@ -144,6 +144,13 @@ export default [
     url: '/heroes/moucaopi',
   },
   {
+    id: 'deecff94-c589-47cf-8f4e-8119198b2002',
+    code: '',
+    cover: '/MenuImage/族荀攸.png',
+    name: '族荀攸',
+    url: '/heroes/zuxunyou',
+  },
+  {
     id: 'aa3d99ff-0444-4f93-8f2a-2c50f39c6366',
     code: '',
     cover: '/MenuImage/李傕.png',
@@ -171,7 +178,7 @@ export default [
               des: '2 狗叫！',
             },
           ],
-          model:'unique',
+          model: 'unique',
           count: 1,
         },
       };
@@ -211,7 +218,7 @@ export default [
               des: '令一名角色摸一张牌并回复1点体力。若场上有存活的徐庶或SP徐庶，则改为令一名角色摸一张牌并回复1点体力，然后你摸一张牌。',
             },
           ],
-          model:'unique',
+          model: 'unique',
           count: 1,
         },
       };
@@ -243,7 +250,7 @@ export default [
               des: '3.徐荣随机获得你装备区和手牌区里各一张牌。',
             },
           ],
-          model:'unique',
+          model: 'unique',
           count: 1,
         },
       };
