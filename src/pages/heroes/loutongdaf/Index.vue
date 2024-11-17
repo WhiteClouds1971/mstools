@@ -25,7 +25,7 @@
       str.push(random(['【桃】', '【酒】'], 1));
     }
     if (data.qty !== 0 && data.qty % 8 === 0) {
-      str.push(random(['【五中生有】', '【决斗】'], 1));
+      str.push(random(['【无中生有】', '【决斗】'], 1));
     }
     return str.join("、");
   });
