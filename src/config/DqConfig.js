@@ -114,6 +114,13 @@ export default [
     images: ['/DQ/破围.jpg'],
   },
   {
+    id: '290d0d11-99d2-4a20-b990-c44d10163e57',
+    name: '吕布',
+    bgColor: color.darkYellow,
+    code: 'shenguojiazuoxin',
+    images: ['/DQ/shen.吕布.png'],
+  },
+  {
     id: '1b6db9f1-ccb1-4554-9c2c-17b571fcf78c',
     name: '火计',
     bgColor: color.color6,
