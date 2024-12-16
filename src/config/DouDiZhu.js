@@ -16,7 +16,7 @@ export default {
     {
       id: '98f313eb-d4ac-4681-b340-1e8b9d162cfe',
       title: '农民禁将',
-      values: [],
+      values: ['起孙坚'],
     },
   ],
   // 替换武将
