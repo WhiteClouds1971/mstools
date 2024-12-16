@@ -39,6 +39,13 @@ export default [
     name: '大旗',
     url: '/dq',
   },
+  {
+    id: 'ea004c81-ccf6-43d7-82d9-c1a3a57b2398',
+    code: '斗地主',
+    cover: '/MenuImage/斗地主.png',
+    name: '斗地主',
+    url: '/doudizhu',
+  },
   // 选中势力
   {
     id: '8ed689ff-c1c1-4348-9531-33134d7a28b3',
