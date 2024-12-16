@@ -67,7 +67,7 @@ export default [
     id: '4e28b1e2-f91d-437f-af80-00ea56115f24',
     code: 'JSWZ',
     cover: '/MenuImage/记录角色.webp',
-    name: '记录角色',
+    name: '记录数字',
     url: '/jswz',
   },
   // 记录花色
@@ -150,112 +150,112 @@ export default [
     name: '族荀攸',
     url: '/heroes/zuxunyou',
   },
-  {
-    id: 'aa3d99ff-0444-4f93-8f2a-2c50f39c6366',
-    code: '',
-    cover: '/MenuImage/李傕.png',
-    name: '李傕',
-    getModal: data => {
-      return {
-        component: () => import('@/modal/RandomDisplay.vue'),
-        modal: {
-          title: '咩咩叫，咩咩叫',
-        },
-        props: {
-          items: [
-            {
-              id: 'a18e8bbb-a4d9-47dd-b4a1-c69ff33f1aaf',
-              title: '羊袭',
-              des: '你造成了高达 0 点的伤害！',
-            },
-            {
-              title: '狼袭',
-              id: 'ef68aa91-9a87-4bb7-aa7e-a1c2e6582fce',
-              des: '你造成了高达 1 点的伤害！',
-            },
-            {
-              id: '25615d10-787c-43da-bbd4-0840e3982fbe',
-              des: '2 狗叫！',
-            },
-          ],
-          model: 'unique',
-          count: 1,
-        },
-      };
-    },
-  },
-  {
-    id: 'e5f11b59-6354-4bcf-804b-d9026e2ba602',
-    code: '',
-    cover: '/MenuImage/庞德公.png',
-    name: '庞德公',
-    getModal: data => {
-      return {
-        component: () => import('@/modal/RandomDisplay.vue'),
-        modal: {
-          title: '擦拭',
-        },
-        props: {
-          items: [
-            {
-              id: '92df3722-0fad-49f5-a457-5d677731070c',
-              title: '卧龙',
-              des: '对一名角色造成1点火焰伤害。若场上有存活的卧龙诸葛亮，则改为对至多两名角色各造成1点火焰伤害。',
-            },
-            {
-              title: '凤雏',
-              id: '358bd350-29b4-4e42-8e06-901ffe6d3895',
-              des: '令至多三名角色进入连环状态。若场上有存活的庞统或SP庞统，则改为令至多四名角色进入连环状态。',
-            },
-            {
-              title: '水镜',
-              id: 'b48b352d-f46a-4dc1-a642-00729d752068',
-              des: '移动场上的一张防具牌。若场上有存活的司马徽，则改为移动场上的一张装备牌。',
-            },
-            {
-              title: '玄剑',
-              id: 'f19cc021-8ecf-43b3-9f25-7e094c5a9e33',
-              des: '令一名角色摸一张牌并回复1点体力。若场上有存活的徐庶或SP徐庶，则改为令一名角色摸一张牌并回复1点体力，然后你摸一张牌。',
-            },
-          ],
-          model: 'unique',
-          count: 1,
-        },
-      };
-    },
-  },
-  {
-    id: '410a4665-6f92-4ec3-9690-ed519a42ead4',
-    code: '',
-    cover: '/MenuImage/徐荣.png',
-    name: '徐荣',
-    getModal: data => {
-      return {
-        component: () => import('@/modal/RandomDisplay.vue'),
-        modal: {
-          title: '此祸加之与你，定有所伤！',
-        },
-        props: {
-          items: [
-            {
-              id: '0be6f889-6695-4e7f-a33d-4b0ca677c4d8',
-              des: '1.你受到徐荣对你造成的1点火焰伤害且本回合你不能对徐荣使用【杀】；',
-            },
-            {
-              id: 'b520f5bc-911a-4cdc-98a3-e1943fd0c0fc',
-              des: '2.失去1点体力且本回合手牌上限-1；',
-            },
-            {
-              id: '25615d10-787c-43da-bbd4-0840e3982fbe',
-              des: '3.徐荣随机获得你装备区和手牌区里各一张牌。',
-            },
-          ],
-          model: 'unique',
-          count: 1,
-        },
-      };
-    },
-  },
+  // {
+  //   id: 'aa3d99ff-0444-4f93-8f2a-2c50f39c6366',
+  //   code: '',
+  //   cover: '/MenuImage/李傕.png',
+  //   name: '李傕',
+  //   getModal: data => {
+  //     return {
+  //       component: () => import('@/modal/RandomDisplay.vue'),
+  //       modal: {
+  //         title: '咩咩叫，咩咩叫',
+  //       },
+  //       props: {
+  //         items: [
+  //           {
+  //             id: 'a18e8bbb-a4d9-47dd-b4a1-c69ff33f1aaf',
+  //             title: '羊袭',
+  //             des: '你造成了高达 0 点的伤害！',
+  //           },
+  //           {
+  //             title: '狼袭',
+  //             id: 'ef68aa91-9a87-4bb7-aa7e-a1c2e6582fce',
+  //             des: '你造成了高达 1 点的伤害！',
+  //           },
+  //           {
+  //             id: '25615d10-787c-43da-bbd4-0840e3982fbe',
+  //             des: '2 狗叫！',
+  //           },
+  //         ],
+  //         model: 'unique',
+  //         count: 1,
+  //       },
+  //     };
+  //   },
+  // },
+  // {
+  //   id: 'e5f11b59-6354-4bcf-804b-d9026e2ba602',
+  //   code: '',
+  //   cover: '/MenuImage/庞德公.png',
+  //   name: '庞德公',
+  //   getModal: data => {
+  //     return {
+  //       component: () => import('@/modal/RandomDisplay.vue'),
+  //       modal: {
+  //         title: '擦拭',
+  //       },
+  //       props: {
+  //         items: [
+  //           {
+  //             id: '92df3722-0fad-49f5-a457-5d677731070c',
+  //             title: '卧龙',
+  //             des: '对一名角色造成1点火焰伤害。若场上有存活的卧龙诸葛亮，则改为对至多两名角色各造成1点火焰伤害。',
+  //           },
+  //           {
+  //             title: '凤雏',
+  //             id: '358bd350-29b4-4e42-8e06-901ffe6d3895',
+  //             des: '令至多三名角色进入连环状态。若场上有存活的庞统或SP庞统，则改为令至多四名角色进入连环状态。',
+  //           },
+  //           {
+  //             title: '水镜',
+  //             id: 'b48b352d-f46a-4dc1-a642-00729d752068',
+  //             des: '移动场上的一张防具牌。若场上有存活的司马徽，则改为移动场上的一张装备牌。',
+  //           },
+  //           {
+  //             title: '玄剑',
+  //             id: 'f19cc021-8ecf-43b3-9f25-7e094c5a9e33',
+  //             des: '令一名角色摸一张牌并回复1点体力。若场上有存活的徐庶或SP徐庶，则改为令一名角色摸一张牌并回复1点体力，然后你摸一张牌。',
+  //           },
+  //         ],
+  //         model: 'unique',
+  //         count: 1,
+  //       },
+  //     };
+  //   },
+  // },
+  // {
+  //   id: '410a4665-6f92-4ec3-9690-ed519a42ead4',
+  //   code: '',
+  //   cover: '/MenuImage/徐荣.png',
+  //   name: '徐荣',
+  //   getModal: data => {
+  //     return {
+  //       component: () => import('@/modal/RandomDisplay.vue'),
+  //       modal: {
+  //         title: '此祸加之与你，定有所伤！',
+  //       },
+  //       props: {
+  //         items: [
+  //           {
+  //             id: '0be6f889-6695-4e7f-a33d-4b0ca677c4d8',
+  //             des: '1.你受到徐荣对你造成的1点火焰伤害且本回合你不能对徐荣使用【杀】；',
+  //           },
+  //           {
+  //             id: 'b520f5bc-911a-4cdc-98a3-e1943fd0c0fc',
+  //             des: '2.失去1点体力且本回合手牌上限-1；',
+  //           },
+  //           {
+  //             id: '25615d10-787c-43da-bbd4-0840e3982fbe',
+  //             des: '3.徐荣随机获得你装备区和手牌区里各一张牌。',
+  //           },
+  //         ],
+  //         model: 'unique',
+  //         count: 1,
+  //       },
+  //     };
+  //   },
+  // },
   {
     id: 'c122c179-eb82-414d-bf53-3fac5295669e',
     code: '',
@@ -290,5 +290,12 @@ export default [
     cover: '/MenuImage/孙寒华.png',
     name: '孙寒华',
     url: '/heroes/sunhanhua',
+  },
+  {
+    id: '3856c460-c600-48f3-9086-2320ee0aad26',
+    code: '',
+    cover: '/MenuImage/张芝.png',
+    name: '张芝',
+    url: '/heroes/zhangzhi',
   },
 ];

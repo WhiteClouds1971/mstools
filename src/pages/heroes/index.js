@@ -87,4 +87,12 @@ export default [
       title: '族荀攸',
     },
   },
+  {
+    name: 'zhangzhi',
+    path: '/heroes/zhangzhi',
+    component: () => import('./zhangzhi/Index.vue'),
+    meta: {
+      title: '张芝',
+    },
+  },
 ];

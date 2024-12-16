@@ -76,6 +76,7 @@
       style="margin-top: 20px"
       :color="ren.bgColor"
       :name="ren.name"
+      :qty-max="ren.qtyMax"
     ></bj-item>
     <selectable-skills
       style="margin-top: 20px"

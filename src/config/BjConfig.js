@@ -34,6 +34,7 @@ export default [
     code: 'ren',
     name: '忍',
     qty: 0,
+    qtyMax: 6,
     bgColor: color.color1,
   },
   {
