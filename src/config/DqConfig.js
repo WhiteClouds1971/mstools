@@ -176,4 +176,11 @@ export default [
     code: 'shenguojiazuoxin',
     images: ['/DQ/shen.佐幸.png'],
   },
+  {
+    id: '6c86f885-55f2-4daa-b320-5fe4fdec51c8',
+    name: '执柄',
+    bgColor: color.qun,
+    code: '',
+    images: ['/DQ/qun.执柄.png'],
+  },
 ];
