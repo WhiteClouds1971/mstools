@@ -34,6 +34,12 @@ export default {
       images: ['/doudizhu/新UI.LE017.兴吴之邓禹.鲁肃.png'],
     },
     {
+      id: '503e1399-029f-46a8-b97a-e2bd7384486a',
+      name: '神司马懿',
+      btnColor: color.wei,
+      images: ['/doudizhu/新UI.LE008.鉴往知来.司马懿.png'],
+    },
+    {
       id: 'a5c6a5df-58ca-49e1-a322-d02416477735',
       name: '谋陆逊',
       btnColor: color.wu,
