@@ -117,7 +117,7 @@ export default [
     id: '290d0d11-99d2-4a20-b990-c44d10163e57',
     name: '吕布',
     bgColor: color.darkYellow,
-    code: 'shenguojiazuoxin',
+    code: '',
     images: ['/DQ/shen.吕布.png'],
   },
   {
