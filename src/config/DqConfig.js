@@ -113,13 +113,13 @@ export default [
     code: '',
     images: ['/DQ/破围.jpg'],
   },
-  {
-    id: '290d0d11-99d2-4a20-b990-c44d10163e57',
-    name: '吕布',
-    bgColor: color.darkYellow,
-    code: '',
-    images: ['/DQ/shen.吕布.png'],
-  },
+  // {
+  //   id: '290d0d11-99d2-4a20-b990-c44d10163e57',
+  //   name: '吕布',
+  //   bgColor: color.darkYellow,
+  //   code: '',
+  //   images: ['/DQ/shen.吕布.png'],
+  // },
   {
     id: '1b6db9f1-ccb1-4554-9c2c-17b571fcf78c',
     name: '火计',
@@ -182,5 +182,12 @@ export default [
     bgColor: color.qun,
     code: '',
     images: ['/DQ/qun.执柄.png'],
+  },
+  {
+    id: 'a5e2e6c8-711a-45d8-af8e-94b6a9856e14',
+    name: '五禽戏',
+    bgColor: color.qun,
+    code: 'wuqinxi',
+    images: ['/DQ/shen.五禽戏.png'],
   },
 ];

@@ -95,4 +95,12 @@ export default [
       title: '张芝',
     },
   },
+  {
+    name: 'LeHuaTuo',
+    path: '/heroes/lehuatuo',
+    component: () => import('./LeHuaTuo/Index.vue'),
+    meta: {
+      title: '神华佗',
+    },
+  },
 ];

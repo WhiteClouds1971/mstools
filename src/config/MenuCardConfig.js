@@ -39,13 +39,13 @@ export default [
     name: '大旗',
     url: '/dq',
   },
-  {
-    id: 'ea004c81-ccf6-43d7-82d9-c1a3a57b2398',
-    code: '斗地主',
-    cover: '/MenuImage/斗地主.png',
-    name: '斗地主',
-    url: '/doudizhu',
-  },
+  // {
+  //   id: 'ea004c81-ccf6-43d7-82d9-c1a3a57b2398',
+  //   code: '斗地主',
+  //   cover: '/MenuImage/斗地主.png',
+  //   name: '斗地主',
+  //   url: '/doudizhu',
+  // },
   // 选中势力
   {
     id: '8ed689ff-c1c1-4348-9531-33134d7a28b3',
@@ -55,20 +55,20 @@ export default [
     url: '/xlk',
   },
   // 谋奕
-  {
-    id: 'eb144c42-9955-4e67-bee3-4d4b48a25d1e',
-    code: 'MOUYI',
-    cover: '/MenuImage/谋奕.jpg',
-    name: '谋奕',
-    getModal: data => {
-      return {
-        component: () => import('@/modal/My.vue'),
-        modal: {
-          title: '谋奕',
-        },
-      };
-    },
-  },
+  // {
+  //   id: 'eb144c42-9955-4e67-bee3-4d4b48a25d1e',
+  //   code: 'MOUYI',
+  //   cover: '/MenuImage/谋奕.jpg',
+  //   name: '谋奕',
+  //   getModal: data => {
+  //     return {
+  //       component: () => import('@/modal/My.vue'),
+  //       modal: {
+  //         title: '谋奕',
+  //       },
+  //     };
+  //   },
+  // },
   // 记录角色位置
   {
     id: '4e28b1e2-f91d-437f-af80-00ea56115f24',
@@ -121,6 +121,13 @@ export default [
     cover: '/MenuImage/神郭嘉.png',
     name: '神郭嘉',
     url: '/heroes/shenguojia',
+  },
+  {
+    id: '40acbce6-3758-4fdb-9d5f-3b42cdfdbe18',
+    code: 'shenhuatuo',
+    cover: '/MenuImage/神华佗.png',
+    name: '神华佗',
+    url: '/heroes/lehuatuo',
   },
   {
     id: '3305d53d-8128-47b8-8472-9e42c40e1325',
