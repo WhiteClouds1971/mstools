@@ -1,0 +1,37 @@
+{
+  "id": "4739954",
+  "name": "mstools",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "三国杀线下面杀辅助工具",
+  "glyphs": [
+    {
+      "icon_id": "16167823",
+      "name": "简单模式",
+      "font_class": "jiandanmoshi",
+      "unicode": "e6f2",
+      "unicode_decimal": 59122
+    },
+    {
+      "icon_id": "41965238",
+      "name": "复杂模式",
+      "font_class": "fuzamoshi",
+      "unicode": "e6c8",
+      "unicode_decimal": 59080
+    },
+    {
+      "icon_id": "9380613",
+      "name": "手术出血量",
+      "font_class": "shoushuchuxieliang",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "12522813",
+      "name": "护甲",
+      "font_class": "hujia",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    }
+  ]
+}
