@@ -58,14 +58,6 @@
               </template>
               <template v-else>*</template>
             </selectable-button>
-            <!--            <hide-card-->
-            <!--                :key="props.id"-->
-            <!--                :is-hide="props.isHide"-->
-            <!--                :name="props.name"-->
-            <!--                :hs-color="props.hsColor"-->
-            <!--                :hs-icon="props.hsIcon"-->
-            <!--                :number="props.number"-->
-            <!--            ></hide-card>-->
             <template #right>
               <van-button
                 square
