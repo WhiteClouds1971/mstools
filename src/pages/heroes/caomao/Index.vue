@@ -5,7 +5,7 @@
   import SelectableSkills from '@/components/SelectableSkills.vue';
 
   const data = reactive({
-    dxz: 60,
+    dxz: 20,
     skills: [
       {
         id: '8841c02f-5205-4e29-8704-2c9e2e5154bb',

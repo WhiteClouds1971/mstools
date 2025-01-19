@@ -1,13 +1,13 @@
 import color from '@/config/Color.js';
 
 export default [
-  {
-    id: '60663ae6-52ba-43df-9e37-d12ab857d26c',
-    name: '隐匿',
-    bgColor: color.color1,
-    code: '',
-    images: ['/DQ/隐匿.jpg'],
-  },
+  // {
+  //   id: '60663ae6-52ba-43df-9e37-d12ab857d26c',
+  //   name: '隐匿',
+  //   bgColor: color.color1,
+  //   code: '',
+  //   images: ['/DQ/隐匿.jpg'],
+  // },
   {
     id: '1c38c3f5-d795-4f5d-9b54-4ceebf86b656',
     name: '四象',
@@ -99,13 +99,13 @@ export default [
     code: '',
     images: ['/DQ/三国杀-【解甲归田】.png'],
   },
-  {
-    id: '2adf8c6c-88ad-4ba6-bb85-8158b72e2f81',
-    name: '鸿图',
-    bgColor: color.shu,
-    code: '',
-    images: ['/DQ/shu.鸿图.png'],
-  },
+  // {
+  //   id: '2adf8c6c-88ad-4ba6-bb85-8158b72e2f81',
+  //   name: '鸿图',
+  //   bgColor: color.shu,
+  //   code: '',
+  //   images: ['/DQ/shu.鸿图.png'],
+  // },
   {
     id: 'acdd00a4-2eeb-4be3-84aa-efc63af84119',
     name: '破围',
@@ -148,20 +148,20 @@ export default [
     code: '',
     images: ['/DQ/qun.十常侍.png'],
   },
-  {
-    id: '8105d9f9-161f-40c7-917f-ac6ab295b207',
-    name: '巧思',
-    bgColor: color.color3,
-    code: '',
-    images: ['/DQ/wei.水转百戏图.png'],
-  },
-  {
-    id: 'f07a6121-a355-43bd-9c5b-86bd790d3dae',
-    name: '荐杰',
-    bgColor: color.qun,
-    code: '',
-    images: ['/DQ/qun.荐杰.png'],
-  },
+  // {
+  //   id: '8105d9f9-161f-40c7-917f-ac6ab295b207',
+  //   name: '巧思',
+  //   bgColor: color.color3,
+  //   code: '',
+  //   images: ['/DQ/wei.水转百戏图.png'],
+  // },
+  // {
+  //   id: 'f07a6121-a355-43bd-9c5b-86bd790d3dae',
+  //   name: '荐杰',
+  //   bgColor: color.qun,
+  //   code: '',
+  //   images: ['/DQ/qun.荐杰.png'],
+  // },
   {
     id: '0c7c00c5-3947-473d-b94c-b556a94f272c',
     name: '曹丕',
@@ -176,13 +176,13 @@ export default [
     code: 'shenguojiazuoxin',
     images: ['/DQ/shen.佐幸.png'],
   },
-  {
-    id: '6c86f885-55f2-4daa-b320-5fe4fdec51c8',
-    name: '执柄',
-    bgColor: color.qun,
-    code: '',
-    images: ['/DQ/qun.执柄.png'],
-  },
+  // {
+  //   id: '6c86f885-55f2-4daa-b320-5fe4fdec51c8',
+  //   name: '执柄',
+  //   bgColor: color.qun,
+  //   code: '',
+  //   images: ['/DQ/qun.执柄.png'],
+  // },
   {
     id: 'a5e2e6c8-711a-45d8-af8e-94b6a9856e14',
     name: '五禽戏',

@@ -24,13 +24,13 @@ export default [
     url: '/bj',
   },
   // 阴阳转化
-  {
-    id: '773fdd4d-335a-4738-b1ab-190f00c98838',
-    code: 'YINYANGZHUANHUAN',
-    cover: '/MenuImage/阴阳转化.png',
-    name: '阴阳转化',
-    url: '/yyzh',
-  },
+  // {
+  //   id: '773fdd4d-335a-4738-b1ab-190f00c98838',
+  //   code: 'YINYANGZHUANHUAN',
+  //   cover: '/MenuImage/阴阳转化.png',
+  //   name: '阴阳转化',
+  //   url: '/yyzh',
+  // },
   // 大旗
   {
     id: '4cf5873d-4223-4a47-850c-fd21ae38e30f',
@@ -157,13 +157,13 @@ export default [
     name: '谋曹丕',
     url: '/heroes/moucaopi',
   },
-  {
-    id: 'deecff94-c589-47cf-8f4e-8119198b2002',
-    code: '',
-    cover: '/MenuImage/族荀攸.png',
-    name: '族荀攸',
-    url: '/heroes/zuxunyou',
-  },
+  // {
+  //   id: 'deecff94-c589-47cf-8f4e-8119198b2002',
+  //   code: '',
+  //   cover: '/MenuImage/族荀攸.png',
+  //   name: '族荀攸',
+  //   url: '/heroes/zuxunyou',
+  // },
   // {
   //   id: 'aa3d99ff-0444-4f93-8f2a-2c50f39c6366',
   //   code: '',
@@ -277,13 +277,13 @@ export default [
     name: '骆统',
     url: '/heroes/loutongdaf',
   },
-  {
-    id: '2802f440-fb5a-415d-be41-6b63b75f6f52',
-    code: '',
-    cover: '/MenuImage/卧龙凤雏.png',
-    name: '卧龙凤雏',
-    url: '/heroes/wolongfengchu',
-  },
+  // {
+  //   id: '2802f440-fb5a-415d-be41-6b63b75f6f52',
+  //   code: '',
+  //   cover: '/MenuImage/卧龙凤雏.png',
+  //   name: '卧龙凤雏',
+  //   url: '/heroes/wolongfengchu',
+  // },
   // {
   //   id: 'b3312486-f5d9-476e-b720-44e182d44d1e',
   //   code: '',
@@ -305,11 +305,11 @@ export default [
     name: '孙寒华',
     url: '/heroes/sunhanhua',
   },
-  {
-    id: '3856c460-c600-48f3-9086-2320ee0aad26',
-    code: '',
-    cover: '/MenuImage/张芝.png',
-    name: '张芝',
-    url: '/heroes/zhangzhi',
-  },
+  // {
+  //   id: '3856c460-c600-48f3-9086-2320ee0aad26',
+  //   code: '',
+  //   cover: '/MenuImage/张芝.png',
+  //   name: '张芝',
+  //   url: '/heroes/zhangzhi',
+  // },
 ];
